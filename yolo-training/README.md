@@ -31,6 +31,21 @@ docker compose up
 | 2  | SOT-223 |
 | 3  | Module  |
 
+## Benchmark (YOLOv12n, CPU)
+
+Test image: `scans/MMS_NEW/back/4_detect/chunks_nobg/chunk_r2_c0.jpg` (3072x3072, not in training set)
+
+| Stage | Time |
+|-------|------|
+| Preprocess | 12.3ms |
+| Inference | 162.8ms |
+| Postprocess | 9.4ms |
+| **Total** | **~185ms** |
+
+- Detected **17 components**, confidence range 0.41–0.97
+- Hardware: Intel CPU (no GPU)
+- Input resized to 640x640 for inference
+
 ## Notes
 
 - Chunks are 3072x3072, YOLO resizes to 640x640 during training
