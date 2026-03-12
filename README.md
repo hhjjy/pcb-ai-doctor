@@ -1,4 +1,4 @@
-# Circuit AI Doctor
+# PCB AI Doctor
 
 低成本自動化 PCB 電路板分析系統 — 利用 3D printer + USB 顯微鏡 + AI，自動掃描、偵測、識別 PCB 上的電子元件。
 
